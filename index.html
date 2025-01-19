@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Limpieza para Cachorros</title>
+    <link rel="stylesheet" href="styles.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<li><i class="fas fa-bath"></i> <strong>Baño Completo:</strong> Limpieza, secado y perfume especial para tu perro.</li>
+<li><i class="fas fa-cut"></i> <strong>Corte de Pelo:</strong> Corta el pelo de tu perro según su raza.</li>
+
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a los Servicios de Limpieza para Cachorros</h1>
+        <p>¡Dale a tu cachorro el cuidado que merece con nuestros servicios profesionales!</p>
+    </header>
+
+    <section>
+        <h2>Servicios que Ofrecemos</h2>
+        <ul>
+            <li><strong>Baño Completo:</strong> Limpieza, secado y perfume especial para tu perro.</li>
+            <li><strong>Corte de Pelo:</strong> Corta el pelo de tu perro según su raza.</li>
+            <li><strong>Corte de Uñas:</strong> Corte y cuidado de las uñas de tu cachorro.</li>
+            <li><strong>Tratamiento Especial:</strong> Para perros con piel sensible o alergias.</li>
+        </ul>
+    </section>
+
+    <!-- Nuevo formulario -->
+    <form action="https://wa.me/573219858422" method="get" target="_blank" onsubmit="enviarWhatsApp(event)">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <footer>
+        <p>© 2025 Servicios de Limpieza para Cachorros</p>
+    </footer>
+
+    <script><script>
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", (event) => {
+        const nombre = document.getElementById("nombre");
+        const telefono = document.getElementById("telefono");
+        const mensaje = document.getElementById("mensaje");
+
+        if (!nombre.value || !telefono.value || !mensaje.value) {
+            event.preventDefault();
+            alert("Por favor, completa todos los campos antes de enviar.");
+        }
+    });
+</script>
+</body>
+</html>
+
