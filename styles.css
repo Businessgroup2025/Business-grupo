@@ -1,3 +1,11 @@
+.header {
+  background-image: url('images/Screenshot_20231017_031612_Chrome.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Ajusta para que cubra el área */
+  background-position: center; /* Centra la imagen */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+  color: white; /* Texto en blanco para que sea visible */
+}
 /* Estilos generales */
 body {body {
     background: linear-gradient(to bottom, #f9f9f9, #e9ecef);
